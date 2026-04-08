@@ -128,9 +128,9 @@ nav .container {
 
 .hero-content {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 28px;
-    align-items: center;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: stretch;
     padding: 16px 0 18px;
 }
 
@@ -206,10 +206,14 @@ nav .container {
 .hero-image {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+    justify-self: end;
 }
 
 .profile-img {
-    width: min(330px, 100%);
+    width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 22px;
     overflow: hidden;
@@ -781,6 +785,11 @@ footer {
         padding: 34px 26px;
     }
 
+    .hero-image {
+        justify-self: center;
+        max-width: 340px;
+    }
+
     .hero-text p {
         margin-left: auto;
         margin-right: auto;
@@ -791,7 +800,7 @@ footer {
     }
 
     .profile-img {
-        max-width: 300px;
+        max-width: 340px;
     }
 
     .hero {
