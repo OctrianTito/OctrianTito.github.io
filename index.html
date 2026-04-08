@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Octrian Tito - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,7 +14,6 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="container">
-            <div class="logo">MyPortfolio</div>
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
                 <span></span>
@@ -21,6 +23,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Work Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -44,10 +47,11 @@
                 </div>
                 <div class="hero-image">
                     <div class="profile-img">
-                        <img src="image/profil.jpg" alt="Profile Photo">
+                        <img src="image/new profile.jpeg" alt="Profile Photo">
                     </div>
                 </div>
             </div>
+            <div class="hero-divider" aria-hidden="true"></div>
         </div>
     </section>
 
@@ -58,14 +62,14 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>I am a motivated and detail-oriented Fullstack Web Developer with hands-on experience in designing and developing web applications, integrating backend and frontend systems, and optimizing database management.</p>
-                    <p>Currently pursuing a degree in Informatics Engineering at State Polytechnic of Malang with a strong academic performance. I am skilled in web development using frameworks such as Laravel, PHP, and JavaScript, as well as mobile app development with Flutter.</p>
+                    <p>Currently pursuing a degree in Informatics Engineering at State Polytechnic of Malang with a strong academic performance. I am skilled in web development using frameworks such as Laravel, CodeIgniter, and JavaScript, as well as mobile app development with Flutter.</p>
                     <p>I am passionate about solving complex problems and continuously learning new technologies to stay ahead in the tech field. My experience includes working on various projects from web-based systems to machine learning applications.</p>
                     <div class="info-grid" style="margin-top: 24px;">
                         <div class="info-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <strong>Location</strong><br>
-                                Malang, East Java
+                                Surabaya, East Java
                             </div>
                         </div>
                         <div class="info-item">
@@ -79,7 +83,7 @@
                             <i class="fas fa-trophy"></i>
                             <div>
                                 <strong>GPA</strong><br>
-                                3.75 / 4.00
+                                3.78 / 4.00
                             </div>
                         </div>
                         <div class="info-item">
@@ -96,7 +100,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" style="background: white;">
+    <section id="skills" class="section-surface">
         <div class="container">
             <h2 class="section-title">Skills</h2>
             <div class="skills-grid">
@@ -104,51 +108,91 @@
                     <h3><i class="fas fa-code"></i> Web Development</h3>
                     <div class="skill-item">
                         <div class="skill-name"><span>Laravel</span><span>85%</span></div>
-                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-name"><span>PHP</span><span>80%</span></div>
-                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name"><span>JavaScript</span><span>75%</span></div>
                         <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name"><span>Bootstrap</span><span>70%</span></div>
+                        <div class="skill-name"><span>CodeIgniter</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>JavaScript</span><span>85%</span></div>
                         <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Bootstrap</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <h3><i class="fas fa-mobile-alt"></i> Mobile & Database</h3>
                     <div class="skill-item">
-                        <div class="skill-name"><span>Flutter</span><span>65%</span></div>
-                        <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                        <div class="skill-name"><span>Flutter</span><span>70%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-name"><span>MySQL</span><span>90%</span></div>
-                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name"><span>SQL Server</span><span>75%</span></div>
-                        <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                        <div class="skill-name"><span>SQL Server</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name"><span>Git & GitHub</span><span>80%</span></div>
-                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        <div class="skill-name"><span>Git & GitHub</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <h3><i class="fas fa-brain"></i> Soft Skills</h3>
-                    <ul style="list-style: none;">
-                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> Effective Communication</li>
-                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> Problem Solving</li>
-                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> Time Management</li>
-                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> Team Collaboration</li>
-                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> Adaptability</li>
+                    <ul class="soft-skills-list">
+                        <li><i class="fas fa-check"></i> Effective Communication</li>
+                        <li><i class="fas fa-check"></i> Problem Solving</li>
+                        <li><i class="fas fa-check"></i> Time Management</li>
+                        <li><i class="fas fa-check"></i> Team Collaboration</li>
+                        <li><i class="fas fa-check"></i> Adaptability</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-surface">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item experience-card">
+                    <div class="experience-top">
+                        <h3>PT Indoprima Gemilang</h3>
+                        <p class="timeline-date">Jan 2026 - Jun 2026</p>
+                        <p><strong>Web Developer Intern</strong></p>
+                        <div class="experience-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 6 Months Internship</span>
+                            <span><i class="fas fa-location-dot"></i> Surabaya, Indonesia (On Site)</span>
+                            <span><i class="fas fa-code"></i> Web Development</span>
+                        </div>
+                    </div>
+
+                    <ul class="experience-list">
+                        <li>Supported website development and feature enhancement for internal business needs.</li>
+                        <li>Collaborated with team members to fix bugs and improve application performance.</li>
+                        <li>Assisted in database-related tasks, including data processing and query optimization.</li>
+                        <li>Performed daily PC checks across factory areas to ensure device readiness and operational continuity.</li>
+                        <li>Created a user manual book for the developed website to support onboarding and day-to-day usage.</li>
+                    </ul>
+
+                    <div class="experience-stack">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">CodeIgniter</span>
+                        <span class="tech-tag">SQL Server</span>
+                        <span class="tech-tag">GitHub</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -218,6 +262,34 @@
 
                 <div class="project-card">
                     <div class="project-header">
+                        <h3>Global Agriculture Challenge 2025</h3>
+                        <p class="project-date">Sep 2025</p>
+                    </div>
+                    <div class="project-body">
+                        <p><strong>Data Mining Competition Project - Telkom University</strong></p>
+                        <ul>
+                            <li>Built a predictive machine learning model to estimate annual average temperature from agriculture, environmental, and geo-temporal data.</li>
+                            <li>Executed end-to-end flow: data cleaning, feature engineering, transformation, training, and evaluation.</li>
+                            <li>Applied CatBoost and ensemble approaches with cross-validation and hyperparameter tuning for performance improvement.</li>
+                            <li>Worked in a multi-contributor repository structure with iterative submissions and score tracking.</li>
+                            <li>Used joblib for model artifact serialization to support reproducible experimentation.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">CatBoost</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Ensemble</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <h3>Project Scope</h3>
+                        <span class="project-status">Competition Project</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
                         <h3>Object Detection Model</h3>
                         <p class="project-date">Sep 2025</p>
                     </div>
@@ -243,12 +315,64 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>JawaraKel6 Mobile App</h3>
+                        <p class="project-date">Oct 2025 - Dec 2025</p>
+                    </div>
+                    <div class="project-body">
+                        <p><strong>Village Administration & Citizen Service App</strong></p>
+                        <ul>
+                            <li>Developed a cross-platform mobile app to support citizen services, activity tracking, and village administration workflows.</li>
+                            <li>Built authentication, dashboard, and module-based features using state management and reusable Flutter components.</li>
+                            <li>Integrated Firebase services for backend support, data sync, and cloud-based app functionality.</li>
+                            <li>Implemented automated testing scenarios with Playwright to validate key user flows and improve release stability.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Playwright</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <h3>Project Link</h3>
+                        <a href="https://github.com/VarizkyNaldiba/PBL_SMT_5/tree/main/jawarakel6" target="_blank">
+                            <i class="fab fa-github"></i> Github
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Internal Operations Web System</h3>
+                        <p class="project-date">Jan 2026 - Mar 2026</p>
+                    </div>
+                    <div class="project-body">
+                        <p><strong>Internship Project - PT Indoprima Gemilang</strong></p>
+                        <ul>
+                            <li>Developed and refined internal workflow modules to help teams manage operational requests more efficiently.</li>
+                            <li>Contributed to the core flow: data input, validation, status update, and progress monitoring in one web-based process.</li>
+                            <li>Handled bug fixing and query optimization to improve response time and data consistency in daily usage.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">CodeIgniter</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">GitHub</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <h3>Project Scope</h3>
+                        <span class="project-status">Confidential - Internal Use</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" style="background: white;">
+    <section id="education" class="section-surface">
         <div class="container">
             <h2 class="section-title">Education</h2>
             <div class="education-timeline">
@@ -256,7 +380,7 @@
                     <h3>State Polytechnic of Malang</h3>
                     <p class="timeline-date">Aug 2023 - Present</p>
                     <p><strong>Informatics Engineering</strong></p>
-                    <p>GPA: 3.75 / 4.00 (Last Semester)</p>
+                    <p>GPA: 3.78 / 4.00 (Semester 5)</p>
                     <p><strong>Relevant Coursework:</strong> Web Development, Mobile Programming, Advanced Database, UI/UX Design, Software Quality Assurance, Operating Systems, Decision Support Systems, Machine Learning, Artificial Intelligence, Computer Networks</p>
                 </div>
 
@@ -273,22 +397,22 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content">
-                <h2 class="section-title" style="color: white;">Get In Touch</h2>
-                <p style="font-size: 18px; margin-bottom: 30px;">I'm currently open to new opportunities and collaborations. Feel free to reach out!</p>
+                <h2 class="section-title contact-title">Get In Touch</h2>
+                <p class="contact-intro">I'm currently open to new opportunities and collaborations. Feel free to reach out!</p>
                 
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <strong>Email</strong><br>
-                            <a href="mailto:octriantito@gmail.com" style="color: white;">octriantito@gmail.com</a>
+                            <a href="mailto:octriantito@gmail.com">octriantito@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
                             <strong>Phone</strong><br>
-                            <a href="tel:+6285771220364" style="color: white;">+62 857 7122 0364</a>
+                            <a href="tel:+6285771220364">+62 857 7122 0364</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -314,13 +438,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Octrian Adiluhung Tito Putra. All rights reserved.</p>
-        </div>
-    </footer>
 
     <script src="js/script.js"></script>
 </body>

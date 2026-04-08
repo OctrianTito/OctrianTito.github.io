@@ -23,12 +23,14 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        if (href === '#') {
+            return;
+        }
+
+        const target = document.querySelector(href);
         if (target) {
-            window.scrollTo({
-                top: target.offsetTop - 70,
-                behavior: 'smooth'
-            });
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
 });
@@ -103,12 +105,16 @@ window.addEventListener('scroll', function() {
     const navLinks = document.querySelectorAll('.nav-links a');
     
     let current = '';
+    const isNearBottom = window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 2;
+
+    if (isNearBottom) {
+        current = 'contact';
+    }
     
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         
-        if (window.pageYOffset >= sectionTop - 100) {
+        if (window.pageYOffset >= sectionTop - 120) {
             current = section.getAttribute('id');
         }
     });
@@ -209,23 +215,6 @@ function animateCounter(element, target, duration = 2000) {
     
     updateCounter();
 }
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
-        if (href !== '#') {
-            e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) {
-                const offsetTop = target.offsetTop - 70;
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        }
-    });
-});
 
 window.addEventListener('load', function() {
     document.body.style.opacity = '0';
